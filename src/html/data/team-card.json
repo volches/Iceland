@@ -1,0 +1,24 @@
+[
+    {
+        "img": "img1.webp",
+        "name":"Elena Moon",
+        "job": "Tour guide and historian",
+        "text1": "Tell you lots of interesting facts and legends about Iceland.",
+        "text2": "Experience as a guide: 5 years."
+    },
+    {
+        "img": "img2.webp",
+        "name":"Eduard Conor",
+        "job": "Guide-instructor",
+        "text1": "Build an unforgettable route and share the main secrets of hiking and claimbing.",
+        "text2": "Experience as a guide: 9 years."
+    },
+    {
+        "img": "img3.webp",
+        "name":"Moris Atterstone",
+        "job": "Tour guide and photographer",
+        "text1": "Helps you to make remarkable photoes of nature and wild animals.",
+        "text2": "Experience as a guide: 7 years."
+    }
+    
+]

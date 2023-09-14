@@ -1,0 +1,20 @@
+.feedbacks {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    @media (max-width:599px) {
+        padding-top: 60px;
+      }
+}
+
+.feedbacks__title {
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media (max-width:599px) {
+        margin-bottom: 40px;
+    }
+}
+
+

@@ -1,0 +1,50 @@
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #FFFCF9;
+    z-index: 1001;
+  }
+  
+  .svg-chief.preloader__image {
+    position: relative;
+    animation: pizza 2s infinite linear;
+    color: #000;
+    transform-origin: left bottom;
+    
+  }
+
+  @keyframes pizza {
+    100% {
+      
+      transform: rotate(360deg);
+      
+    }
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+
+  
+  
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }

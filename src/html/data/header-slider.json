@@ -1,0 +1,57 @@
+[
+    {
+        "link": "wild.html",
+        "img": "sl1.jpg",
+        "name1": "White Arctic",
+        "name2": "Fox"
+    },
+    {
+        "link": "cave.html",
+        "img": "sl2.jpg",
+        "name1": "Blue Ice",
+        "name2": "Cave"
+    },
+    {
+        "link": "glacier.html",
+        "img": "sl3.jpg",
+        "name1": "Glacier",
+        "name2": "Lagoon"
+    },
+    {
+        "link": "scenic.html",
+        "img": "sl4.jpg",
+        "name1": "Northern",
+        "name2": "Lights"
+    },
+    {
+        "link": "wild.html",
+        "img": "sl5.jpg",
+        "name1": "Icelandic",
+        "name2": "Whales"
+    },
+    {
+        "link": "reynisfjall.html",
+        "img": "sl6.jpg",
+        "name1": "Peak of",
+        "name2": "Reynisfjall"
+    },
+    {
+        "link": "wild.html",
+        "img": "sl7.jpg",
+        "name1": "Icelandic",
+        "name2": "Sheeps"
+    },
+    {
+        "link": "waterfalls.html",
+        "img": "sl8.jpg",
+        "name1": "Icelandic",
+        "name2": "Waterfalls"
+    },
+    {
+        "link": "wild.html",
+        "img": "sl9.jpg",
+        "name1": "Icelandic",
+        "name2": "Horses"
+    }
+
+]

@@ -1,0 +1,27 @@
+<!-- TOURS -->
+<section class="tours" id="tour">
+    <div class="title">
+      @@include('./../blocks/title.html',{
+        "name": "Tours"
+      })
+    </div>
+    @@include('./../blocks/tours-img-slider.html')
+    <!-- Iceland -->
+    <span class="tours__ic">Iceland</span>
+    <!-- quote -->
+    <div class="tours__quote">
+        @@include('./../blocks/quote.html',{
+            "name1": "Iceland is not a destination.",
+            "name2": "It is an adventure."
+        })
+    </div>
+    <!-- Tours cards -->
+    <div class="tours__cards">
+      <div class="tours__cards-title">
+        <h3 class="h3 line">What do we offer to you?</h3>
+      </div>
+      @@include('./../blocks/tours-card-slider.html')
+    </div>
+    <!-- Tours card end -->
+    <div class="tours__bg"></div>
+  </section>

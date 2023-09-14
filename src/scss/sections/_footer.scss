@@ -1,0 +1,114 @@
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #16181a;
+    color: $background-color-accent-light;
+}
+
+.footer__row {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+
+    /*Tablet*/
+    @media (max-width: 1199px) {
+        margin-bottom: 40px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-bottom: 30px;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    /* XS Mobile */
+    @media (max-width: 599px) {
+        margin-bottom: 40px;
+        row-gap: 40px;
+    }
+}
+
+.footer__nav {
+    display: flex;
+    // column-gap: 50px;
+
+    /* XS Mobile */
+    @media (max-width: 599px) {
+        flex-direction: column;
+        row-gap: 20px;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.footer__nav-item {
+    font-family: "Playfair Display SC", serif;
+    margin-right: 45px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: $background-color-accent-light;
+    border: 1px solid transparent;
+    transition: border-bottom 0.2s; 
+
+    &:hover {
+            border-bottom: 1px solid $text-color;
+        }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+
+    /* XS Mobile */
+    @media (max-width: 599px) {
+        margin-right: 0;
+    }
+}
+
+.footer__socials {
+    display: flex;
+    column-gap: 30px;
+
+    .social-icon {
+        fill: $background-color-accent-light;
+    }
+
+    /* XS Mobile */
+    @media (max-width: 599px) {
+        column-gap: 20px;
+    }
+}
+
+
+.footer__copyright p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: $background-color-accent;
+
+    span {
+        font-family: "Playfair Display SC", serif;
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    p+p {
+        margin-top: 15px;
+    }
+
+    /* XS Mobile */
+    @media (max-width: 599px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}
+
+

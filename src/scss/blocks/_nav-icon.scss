@@ -1,0 +1,183 @@
+// Ширина и высота линии в иконке
+$lineWidth: 30px;
+$lineHeight: 3px;
+$radius: 2px;
+$lineMargin: 7px;
+$color: #000;
+
+// // Размеры контейнера
+// $width: $lineWidth;
+// $height: $lineHeight * 3 + $lineMargin * 2;
+
+.nav-icon {
+    position: relative;
+    right: 0;
+    margin-left: auto;
+    height: 30px;
+    width: 37px;
+
+    display: flex;
+	justify-content: center;
+	align-items: center;
+
+    cursor: pointer;
+
+    // &:hover {
+
+    //     .nav-icon__middle {
+    //         background-color: $accent-color-hover;
+
+    //         &::before, &::after {
+    //             background-color: $accent-color-hover;
+    //         }
+    //     }
+
+    // }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.nav-icon__middle {
+    position: relative;
+    width: $lineWidth;
+    height: $lineHeight;
+    border-radius: $radius;
+    background-color: $text-color-bright;
+    transition: background-color 0.2s ease-in;
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        left: -5px;
+        width: 35px;
+        height: $lineHeight;
+        border-radius: $radius;
+        transition: background-color 0.2s ease-in, transform 0.2s ease-in, top 0.2s linear 0.2s, width 0.2s;
+        background-color: $text-color-bright;
+    }
+
+    &::after{
+        width:25px ;
+        left: 5px;
+    }
+
+    &::before {
+        top: -($lineHeight+$lineMargin);
+    }
+
+    &::after {
+        top: $lineHeight+$lineMargin;
+    }
+}
+
+/* Active state */
+
+.nav-icon.nav-icon--active .nav-icon__middle {
+    background-color: transparent;
+
+    &::before, &::after {
+        top: 0;
+        left: 0;
+        transition: width 0.2s, top 0.2s linear, transform 0.2s ease-in 0.2s;
+        background-color: $background-color-accent-light;
+    }
+
+    &::before {
+        
+        transform: rotate(45deg);
+        width: 40px;
+        
+    }
+
+    &::after {
+        
+        transform: rotate(-45deg);
+        width: 40px;
+        
+    }
+}
+
+.nav-icon.nav-icon--active {
+    position: fixed;
+    right: 80px;
+    top: 65px;
+    z-index: 12;
+
+    @media (max-width:1139px) {
+        right: 53px;
+    }
+
+    @media (max-width:899px){
+        top: 30px;
+        right: 45px;
+    }
+
+
+    @media (max-width:639px) {
+        right: 27px;
+        
+    }
+}
+
+
+// header-top
+
+.header-top .nav-icon__middle {
+    background-color: $background-color-accent-light;
+
+    &::before, &::after {
+        content: "";
+        background-color: $background-color-accent-light;;
+    }
+
+  }
+
+  .header-top .nav-icon.nav-icon--active {
+    position: fixed;
+    right: 80px;
+    top: 40px;
+    z-index: 12;
+
+    @media (max-width:1139px) {
+        right: 53px;
+    }
+
+    @media (max-width:899px){
+        top: 30px;
+        right: 45px;
+    }
+
+
+    @media (max-width:639px) {
+        right: 27px;
+        
+    }
+}
+  
+
+// header-inner
+
+
+  .header-inner .nav-icon.nav-icon--active {
+    position: fixed;
+    right: 80px;
+    top: 40px;
+    z-index: 12;
+
+    @media (max-width:1139px) {
+        right: 53px;
+    }
+
+    @media (max-width:899px){
+        top: 30px;
+        right: 45px;
+    }
+
+
+    @media (max-width:639px) {
+        right: 27px;
+        
+    }
+}

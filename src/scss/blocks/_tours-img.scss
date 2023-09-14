@@ -1,0 +1,297 @@
+// Swiper
+
+.tours-slider {
+    max-width: 1500px;
+    width: 90%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .swiper-pagination-bullet{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $background-color-accent-light;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background-color: $text-color !important;
+    }
+    
+
+
+    @media (max-width:899px) {
+        width: 95%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media (max-width:499px) {
+        height: 430px;
+    }
+
+    @media (max-width:429px){
+      width: 100%;
+    }
+  
+  }
+
+  
+
+  .swiper-pagination {
+    position: absolute;
+    left: 0;
+    
+    
+  }
+  
+  
+  .swiper-slide.tours-slide {
+    width: 400px;
+    height: 440px;
+    padding: 10px;
+    padding-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    
+
+    @media (max-width:1599px){
+      height: 400px;
+    }
+
+    @media (max-width:499px) {
+      height: 360px !important;
+    }
+  }
+  
+  .tours-slide p {
+    color: $text-color-bright;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    z-index: 5;
+  }
+  
+  
+  .tours-slide a {
+      display: block;
+    padding: 10px;
+    font-size: 16px;
+    color: #9b9a9a;
+  }
+  
+  
+  .tours-slide.swiper-slide a, .tours-slide.swiper-slide p {
+    position: relative;
+    z-index: 4;
+    display: none;
+    opacity: 0;
+
+    // padding-bottom: 0.625rem;
+  }
+  
+  .tours-slide.swiper-slide-active a, .tours-slide.swiper-slide-active p {
+    display: block;
+    opacity: 1;
+    
+  }
+
+  
+
+  
+  .tours-slide--one {
+    position: relative;
+    background-image: url('./../img/tours/slider/slide1.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.5);
+
+    &::before {
+        @extend %overlay2;
+        @extend %overlay3;
+    }
+  }
+  
+  .tours-slide--two {
+    position: relative;
+    background-image: url('./../img/tours/slider/slide2.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.5);
+
+    &::before {
+        @extend %overlay2;
+        @extend %overlay3;
+    }
+  }
+  
+  .tours-slide--three {
+    position: relative;
+    background-image: url('./../img/tours/slider/slide3.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.5);
+
+    &::before {
+        @extend %overlay2;
+        @extend %overlay3;
+    }
+  }
+  
+  .tours-slide--four {
+    position: relative;
+    background-image: url('./../img/tours/slider/slide4.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.5);
+
+    &::before {
+        @extend %overlay2;
+        @extend %overlay3;
+    }
+  }
+  
+  .tours-slide--five {
+    position: relative;
+    background-image: url('./../img/tours/slider/slide5.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.5);
+
+    &::before {
+        @extend %overlay2;
+        @extend %overlay3;
+    }
+  }
+
+  .tours-slide--six {
+    position: relative;
+    background-image: url('./../img/tours/slider/slide6.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.5);
+
+    &::before {
+        @extend %overlay2;
+        @extend %overlay3;
+    }
+  }
+
+  .tours-slide--seven {
+    position: relative;
+    background-image: url('./../img/tours/slider/slide7.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.5);
+
+    &::before {
+        @extend %overlay2;
+        @extend %overlay3;
+    }
+  }
+
+  .tours-slide--eight {
+    position: relative;
+    background-image: url('./../img/tours/slider/slide8.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.5);
+
+    &::before {
+        @extend %overlay2;
+        @extend %overlay3;
+    }
+  }
+
+  .tours-slide--nine {
+    position: relative;
+    background-image: url('./../img/tours/slider/slide9.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.5);
+
+    &::before {
+        @extend %overlay2;
+        @extend %overlay3;
+    }
+  }
+
+  .tours-slide--ten {
+    position: relative;
+    background-image: url('./../img/tours/slider/slide10.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.5);
+
+    &::before {
+        @extend %overlay2;
+        @extend %overlay3;
+    }
+  }
+
+  .tours-slide--eleven {
+    position: relative;
+    background-image: url('./../img/tours/slider/slide11.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.5);
+
+    &::before {
+        @extend %overlay2;
+        @extend %overlay3;
+    }
+  }
+
+  .tours-slide--twelve {
+    position: relative;
+    background-image: url('./../img/tours/slider/slide12.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.5);
+
+    &::before {
+        @extend %overlay2;
+        @extend %overlay3;
+    }
+  }
+
+  .tours-slide--thirteen {
+    position: relative;
+    background-image: url('./../img/tours/slider/slide13.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.5);
+
+    &::before {
+        @extend %overlay2;
+        @extend %overlay3;
+    }
+  }
+
+  .swiper-slide-active {
+    filter: grayscale(0);
+  }
+  
+//   .swiper-3d .swiper-slide-shadow-left,
+//   .swiper-3d .swiper-slide-shadow-right {
+//     background-image: none;
+//   }

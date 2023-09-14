@@ -1,0 +1,20 @@
+<div class="swiper feedback-slider">
+    <div class="swiper-wrapper feedback-slider__wrapper">
+      @@loop('./../blocks/elements/feedback-slider-item.html', './data/feedback-slider.json')
+    </div>
+    <!-- btns -->
+    <div class="feedback-slider__btn">
+      <div class="swiper-button-prev feedback-slider__btn-prev">
+        <svg class="svg-arrow-emp">
+          <use href="./img/icons/svg-sprite.svg#svg-arrow-emp" />
+        </svg>
+      </div>
+      <div class="swiper-button-next feedback-slider__btn-next">
+        <svg class="svg-arrow-emp">
+          <use href="./img/icons/svg-sprite.svg#svg-arrow-emp" />
+        </svg>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="feedback-slider__pagination swiper-pagination"></div>
+  </div>

@@ -1,0 +1,69 @@
+<!-- HEADER -->
+<header class="header">
+    <div class="header__bg"></div>
+
+    <!-- header__nav -->
+    <div class="header__nav">
+      <button class="logo btn-up">
+        <img
+          src="./img/icons/logo.png"
+          width="70px"
+          height="70px"
+          alt="logo"
+        />
+      </button>
+      @@include('./../blocks/nav.html')
+      <ul class="header__nav-list" id="header__nav-list">
+        <li><a href="#tour" class="nav__a">Tours</a></li>
+        <li><a href="#team" class="nav__a">Our team</a></li>
+        <li><a href="#feedback" class="nav__a">Feedbacks</a></li>
+        <li><a href="./contacts.html" class="nav__a">Contact Us</a></li>
+      </ul>
+      @@include('./../blocks/nav-icon.html')
+    </div>
+
+    <!-- Header center -->
+    <div class="header__center">
+      <div class="header__subtitle">Explore</div>
+      <div class="header__title">
+        <!-- slider btns -->
+        <div class="header-slider__btn">
+          <div class="swiper-button-prev header-slider__btn-prev">
+            <svg class="svg-arrow-emp">
+              <use href="./img/icons/svg-sprite.svg#svg-arrow-emp" />
+            </svg>
+          </div>
+          <div class="swiper-button-next header-slider__btn-next">
+            <svg class="svg-arrow-emp">
+              <use href="./img/icons/svg-sprite.svg#svg-arrow-emp" />
+            </svg>
+          </div>
+        </div>
+        <!-- slider btns end -->
+        <h1 class="h1">Iceland</h1>
+      </div>
+      <div>
+        <ul class="header__socials">
+          <li>
+            @@include('./../blocks/social-icon.html',{
+              "icon": "svg-facebook"
+            })
+          </li>
+          <li>
+            @@include('./../blocks/social-icon.html',{
+              "icon": "svg-pin"
+            })
+          </li>
+          <li>
+            @@include('./../blocks/social-icon.html',{
+              "icon": "svg-vk"
+            })
+          </li>
+        </ul>
+      </div>
+    </div>
+    @@include('./../blocks/header-slider.html')
+    <a href="#tour" class="header__seemore">
+      <span>SEE MORE</span>
+    </a>
+  </header>

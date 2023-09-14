@@ -1,0 +1,67 @@
+.form-search {
+	position: relative;
+	z-index: 4;
+	
+
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+
+.form-search__row{
+	position: relative;
+	z-index: 5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 20px;
+
+	@media (max-width:620px){
+		flex-direction: column;
+		row-gap: 20px;
+	}
+}
+
+
+.form-search__label {
+	display: grid;
+	gap: 8px;
+
+    // background-image: url('./../img/icons/map.svg');
+    // background-position: 0 0; /* x y */
+    // background-size: auto;
+    // background-repeat: no-repeat;
+
+	span {
+		color: $text-color-bright;
+		font-size: 24px;
+		font-family: 'Playfair Display SC', serif;
+    	text-transform: uppercase;
+	}
+}
+
+.form-search__input {
+	font-size: 16px;
+	width: 270px;
+	padding: 5px;
+	font-style: normal;
+	font-weight: 450;
+	line-height: normal;
+	border-radius: 5px;
+	
+
+	&::placeholder {
+		color: $background-color;
+	}
+}
+
+.form-search__button {
+	position: relative;
+	z-index: 4;
+	display: flex;
+	align-items: end;
+	justify-content: center;
+}
+
+
+

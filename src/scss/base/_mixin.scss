@@ -1,0 +1,48 @@
+@mixin bgImage ($name) {
+    background-image: url($name);
+    background-size: cover;
+    background-position: center; 
+}
+
+%overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(181.06deg, rgba(0, 0, 0, 0.2) 0.91%, rgba(255, 255, 255, 0) 116.71%, rgba(255, 255, 255, 0) 116.72%);
+}
+
+%overlay2 {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: linear-gradient(to top, #282929, #43444400, #62626300);
+    opacity: 0.8;
+}
+
+%overlay3 {
+    content: '';
+    position: absolute;
+    width: 102%;
+    height: 102%;
+    border-bottom: 5px solid #000;
+    filter: blur(4px);
+    bottom: -3px;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+%overlay4 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(181.06deg, rgba(0, 0, 0, 0.3) 0.91%, rgba(255, 255, 255, 0) 116.71%, rgba(255, 255, 255, 0) 116.72%);
+}

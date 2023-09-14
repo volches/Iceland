@@ -1,0 +1,209 @@
+.tours {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: $text-color;
+    // background-color: #292d33;
+
+    @media (max-width:1669px){
+      padding-bottom: 60px;
+    }
+
+    @media (max-width:599px) {
+      padding-bottom: 40px;
+    }
+}
+
+.tours__header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+
+
+
+
+
+// Tours__Iceland
+
+.tours__ic{
+  font-family: 'Playfair Display SC', serif;
+  position: absolute;
+  font-size: 330px;
+  z-index: -1;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(65, 64, 64, 0.251);
+
+  @media (max-width:1499px) {
+    font-size: 260px;
+    top:-100px;
+  }
+
+  @media (max-width:1139px) {
+    font-size: 200px;
+    top:-50px;
+  }
+
+  @media (max-width:899px) {
+    font-size: 150px;
+    top:-10px;
+  }
+
+  @media (max-width:799px) {
+    font-size: 150px;
+    top:-20px;
+  }
+
+  @media (max-width:619px) {
+    font-size: 120px;
+    top: -20px;
+  }
+
+  @media (max-width:499px) {
+    display: none;
+  }
+
+}
+
+// tours quote
+
+.tours__quote{
+  margin-top:80px;
+  margin-bottom: 140px;
+  text-align: center;
+
+  @media (max-width:599px) {
+    display: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+}
+
+
+.tours__bg {
+  position: absolute;
+  bottom: 0;
+  background-image: url(./../img/tours/bg/bg.png);
+  height: 1000px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: -1;
+  filter: contrast(1.5);
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-right: 5px solid #000;
+    border-bottom: 5px solid #000;
+    filter: blur(4px);
+    bottom: -5px;
+    right: -5px;
+    z-index: 0;
+    opacity: 1;
+}
+
+  @media (max-width:1099px) {
+    display: none;
+  }
+}
+
+
+
+// Tours Travelling
+
+.tours__tr {
+  position: absolute;
+  display: block;
+  text-align: center;
+  font-size: 300px;
+  z-index: -1;
+  top: 1100px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(65, 64, 64, 0.251);
+
+  @media (max-width:1399px) {
+    font-size: 260px;
+    top:-100px;
+  }
+
+  @media (max-width:1139px) {
+    font-size: 200px;
+    top:-50px;
+  }
+
+  @media (max-width:899px) {
+    font-size: 150px;
+    top:-10px;
+  }
+
+  @media (max-width:799px) {
+    font-size: 150px;
+    top:-20px;
+  }
+
+  @media (max-width:599px) {
+    display: none;
+  }
+
+}
+
+// Tours extrim
+
+.tours__ex{
+  position: absolute;
+  font-size: 350px;
+  z-index: -1;
+  top: 2000px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(65, 64, 64, 0.251);
+
+  @media (max-width:1399px) {
+    font-size: 260px;
+    top:-100px;
+  }
+
+  @media (max-width:1139px) {
+    font-size: 200px;
+    top:-50px;
+  }
+
+  @media (max-width:899px) {
+    font-size: 150px;
+    top:-10px;
+  }
+
+  @media (max-width:799px) {
+    font-size: 150px;
+    top:-20px;
+  }
+
+  @media (max-width:599px) {
+    display: none;
+  }
+}
+
+.tours-slider__bg {
+  position: absolute;
+  top: 150px;
+  background-image: url(./../img/feedbacks/bg-1.webp);
+  height: 1000px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: -1;
+
+  @media (max-width:1099px) {
+    display: none;
+  }
+
+}

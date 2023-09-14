@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Iceland. Tourism.</title>
+		<meta name="description" content="Tourism." />
+    	<meta name="keywords" content="travelling, destinations, tours" />
+
+    	<meta property="og:type" content="website" />
+    	<meta property="og:title" content="Tourism." />
+    	<meta property="og:description" content="Tourism." />
+    	<meta property="og:image" content="./img/opengraph.jpg" />
+
+		<!-- Favicons -->
+		<link
+		rel="apple-touch-icon"
+		sizes="180x180"
+		href="./img/favicon/apple-touch-icon.png"
+	  	/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./img/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./img/favicon/favicon-16x16.png"
+		/>
+	  	<link rel="manifest" href="./img/favicon/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="./img/favicon/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+
+
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- preload styles -->
+		<style>
+			.preloader {
+			  position: fixed;
+			  left: 0;
+			  top: 0;
+			  right: 0;
+			  bottom: 0;
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			  background-color: #fffcf9;
+			  z-index: 1001;
+			}
+	  
+			.preloader__image {
+			  position: relative;
+			  width: 130px;
+			  height: 130px;
+			  z-index: 2000;
+			  animation: preloader-rotate;
+			  animation-duration: 5s;
+			  animation-iteration-count: infinite;
+			}
+	  
+			@keyframes preloader-rotate {
+			  from {
+				transform: rotate(0);
+			  }
+			  to {
+				transform: rotate(360deg);
+			  }
+			}
+	  
+			.loaded_hiding .preloader {
+			  transition: 0.3s opacity;
+			  opacity: 0;
+			}
+	  
+			.loaded .preloader {
+			  display: none;
+			}
+		</style>
+		  <!-- preload end -->
+	</head>
+	<body onselectstart="return false" oncopy="return false">
+		@@include('sections/preloader.html')
+		@@include('sections/header.html')
+		@@include('sections/about.html')
+		@@include('sections/tours.html')
+		@@include('sections/want.html')
+		@@include('sections/team.html')
+		@@include('sections/feedback.html')
+		@@include('sections/articles.html')
+		@@include('sections/snow-fall.html')
+		@@include('sections/footer.html')
+		<script src="./js/index.bundle.js"></script>
+		<!-- preload -->
+		<script>
+			window.onload = function () {
+			  document.body.classList.add("loaded_hiding");
+			  window.setTimeout(function () {
+				document.body.classList.add("loaded");
+				document.body.classList.remove("loaded_hiding");
+			  }, 500);
+			};
+		</script>
+	</body>
+</html>

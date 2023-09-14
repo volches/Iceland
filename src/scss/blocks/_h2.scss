@@ -1,0 +1,35 @@
+
+
+.h2 {
+    font-size: 70px;
+    font-family: 'Playfair Display SC', serif;
+    text-transform: uppercase;
+    color: $text-color;
+
+    @media (max-width:1669px){
+        font-size: 60px;
+    }
+
+    @media (max-width:1139px) {
+        font-size: 50px;
+    }
+
+    @media (max-width:799px) {
+        font-size: 40px;
+    }
+
+    @media (max-width:499px) {
+        font-size: 35px;
+    }
+
+
+}
+
+.golden .h2{
+    color: $background-color;
+}
+
+.glacier .h2{
+    color: $background-color;
+}
+

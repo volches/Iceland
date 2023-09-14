@@ -1,0 +1,113 @@
+
+.btn {
+    display: inline-block;
+    font-size: 24px;
+    text-transform: uppercase;
+    border: 1px solid $background-color-accent-light;
+    border-radius: 10px;
+    height: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: $text-color;
+    text-decoration: none;
+    line-height: 57px;
+
+    white-space: nowrap;
+    transition: all 0.5s;
+
+    &:hover, &:focus, &:active {
+        background-color: $accent-color-hover;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    /*Tablet*/
+    @media (max-width: 1139px) {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+}
+
+
+.btn.btn--contacts {
+    position: relative;
+    z-index: 2;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 4px;
+    border: 1px solid $background-color-accent;
+}
+
+
+@property --r {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+.btn-light {
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    height: 60px;
+    width: 200px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    z-index: 1;
+    font-size: 24px;
+    text-transform: uppercase;
+    
+    text-decoration: none;
+    line-height: 57px;
+
+    background: conic-gradient(from var(--r), rgba(247, 245, 245, 0.795) 0%, rgba(247, 245, 245, 0.795) 10%, $background-color-accent 20%);
+    animation: rotating 3s linear infinite;
+}
+
+@keyframes rotating {
+    0% {
+      --r: 0deg;
+    }
+    100% {
+      --r: 360deg;
+    }
+}
+
+.btn-light::after {
+    position: absolute;
+    display: block;
+    content: '';
+    
+    background-color: $background-color;
+    inset: 2px;
+    border-radius: 10px;
+    z-index: 3;
+    
+    transition: opacity .3s ease;
+}
+
+.btn__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $text-color;
+    z-index: 4;
+
+    @media (max-width:599px) {
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+<!-- TEAM -->
+<section class="team" id="team">
+    <div class="title">
+        @@include('./../blocks/title.html',{
+            "name": "Team"
+        })
+    </div>
+    <div class="team__row" id="features">
+        @@loop('./../blocks/elements/team-card.html', './data/team-card.json')
+    </div>
+    <!-- Guides -->
+    <span class="team__gd">Guides</span>
+    <div class="team__bg"></div>
+  </section>

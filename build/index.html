@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Iceland. Tourism.</title>
+		<meta name="description" content="Tourism." />
+    	<meta name="keywords" content="travelling, destinations, tours" />
+
+    	<meta property="og:type" content="website" />
+    	<meta property="og:title" content="Tourism." />
+    	<meta property="og:description" content="Tourism." />
+    	<meta property="og:image" content="./img/opengraph.jpg" />
+
+		<!-- Favicons -->
+		<link
+		rel="apple-touch-icon"
+		sizes="180x180"
+		href="./img/favicon/apple-touch-icon.png"
+	  	/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./img/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./img/favicon/favicon-16x16.png"
+		/>
+	  	<link rel="manifest" href="./img/favicon/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="./img/favicon/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+
+
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- preload styles -->
+		<style>
+			.preloader {
+			  position: fixed;
+			  left: 0;
+			  top: 0;
+			  right: 0;
+			  bottom: 0;
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			  background-color: #fffcf9;
+			  z-index: 1001;
+			}
+	  
+			.preloader__image {
+			  position: relative;
+			  width: 130px;
+			  height: 130px;
+			  z-index: 2000;
+			  animation: preloader-rotate;
+			  animation-duration: 5s;
+			  animation-iteration-count: infinite;
+			}
+	  
+			@keyframes preloader-rotate {
+			  from {
+				transform: rotate(0);
+			  }
+			  to {
+				transform: rotate(360deg);
+			  }
+			}
+	  
+			.loaded_hiding .preloader {
+			  transition: 0.3s opacity;
+			  opacity: 0;
+			}
+	  
+			.loaded .preloader {
+			  display: none;
+			}
+		</style>
+		  <!-- preload end -->
+	</head>
+	<body onselectstart="return false" oncopy="return false">
+		<!-- PRELOADE -->
+<section class="preloader">
+    <img
+      class="preloader__image"
+      src="./img/preloader/compass-preloader.png"
+      width="320px"
+      height="320px"
+      alt="compass"
+    />
+</section>
+<!-- preload end -->
+		<!-- HEADER -->
+<header class="header">
+    <div class="header__bg"></div>
+
+    <!-- header__nav -->
+    <div class="header__nav">
+      <button class="logo btn-up">
+        <img
+          src="./img/icons/logo.png"
+          width="70px"
+          height="70px"
+          alt="logo"
+        />
+      </button>
+      <!-- nav -->
+<nav class="nav" id="nav">
+    <ul class="nav__list-add">
+      <li><a href="#team" class="nav__a">Our team</a></li>
+      <li><a href="#feedback" class="nav__a">Feedbacks</a></li>
+      <li><a href="./contacts.html" class="nav__a">Contact Us</a></li>
+    </ul>
+    <div class="nav__top border">Tours</div>
+    <ul class="nav__list">
+      <li><a href="./golden.html" class="nav__a">Golden circle</a></li>
+      <li><a href="./glacier.html" class="nav__a">Glacier Lagoon</a></li>
+      <li>
+        <a href="./reynisfjall.html" class="nav__a"
+          >The peak of Reynisfjall</a
+        >
+      </li>
+      <li>
+        <a href="./waterfalls.html" class="nav__a"
+          >Icelandic Waterfalls</a
+        >
+      </li>
+      <li><a href="./cave.html" class="nav__a">Blue Ice Cave</a></li>
+      <li><a href="./wild.html" class="nav__a">Wild Nature</a></li>
+      <li><a href="./scenic.html" class="nav__a">Hiking Iceland</a></li>
+    </ul>
+    <span class="nav__ic">Iceland</span>
+    <div class="nav__bg"></div>
+  </nav>
+  <!-- nav end -->
+      <ul class="header__nav-list" id="header__nav-list">
+        <li><a href="#tour" class="nav__a">Tours</a></li>
+        <li><a href="#team" class="nav__a">Our team</a></li>
+        <li><a href="#feedback" class="nav__a">Feedbacks</a></li>
+        <li><a href="./contacts.html" class="nav__a">Contact Us</a></li>
+      </ul>
+      <!-- nav-icon -->
+<button class="nav-icon" id="nav-icon">
+    <div class="nav-icon__middle"></div>
+</button>
+<!-- nav-icon end -->
+    </div>
+
+    <!-- Header center -->
+    <div class="header__center">
+      <div class="header__subtitle">Explore</div>
+      <div class="header__title">
+        <!-- slider btns -->
+        <div class="header-slider__btn">
+          <div class="swiper-button-prev header-slider__btn-prev">
+            <svg class="svg-arrow-emp">
+              <use href="./img/icons/svg-sprite.svg#svg-arrow-emp" />
+            </svg>
+          </div>
+          <div class="swiper-button-next header-slider__btn-next">
+            <svg class="svg-arrow-emp">
+              <use href="./img/icons/svg-sprite.svg#svg-arrow-emp" />
+            </svg>
+          </div>
+        </div>
+        <!-- slider btns end -->
+        <h1 class="h1">Iceland</h1>
+      </div>
+      <div>
+        <ul class="header__socials">
+          <li>
+            <a class="social-icon__wrapper" href="#">
+    <svg class="svg-facebook social-icon">
+      <use href="./img/icons/svg-sprite.svg#svg-facebook" />
+    </svg>
+</a>
+          </li>
+          <li>
+            <a class="social-icon__wrapper" href="#">
+    <svg class="svg-pin social-icon">
+      <use href="./img/icons/svg-sprite.svg#svg-pin" />
+    </svg>
+</a>
+          </li>
+          <li>
+            <a class="social-icon__wrapper" href="#">
+    <svg class="svg-vk social-icon">
+      <use href="./img/icons/svg-sprite.svg#svg-vk" />
+    </svg>
+</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Header slider -->
+<div class="header-slider__wrapper">
+  <div class="swiper header-slider">
+    <div class="swiper-wrapper header-slider__tips">
+        <!-- slide -->
+<a href="./wild.html" class="swiper-slide header-slider__item">
+    <div class="header-slider__img">
+      <img
+        src="./img/header/slides/sl1.jpg"
+        width="260px"
+        height="260px"
+        alt="header-slide"
+      />
+    </div>
+    <span class="header-slider__title">White Arctic<br />Fox</span>
+  </a>
+  <!-- slide end --><!-- slide -->
+<a href="./cave.html" class="swiper-slide header-slider__item">
+    <div class="header-slider__img">
+      <img
+        src="./img/header/slides/sl2.jpg"
+        width="260px"
+        height="260px"
+        alt="header-slide"
+      />
+    </div>
+    <span class="header-slider__title">Blue Ice<br />Cave</span>
+  </a>
+  <!-- slide end --><!-- slide -->
+<a href="./glacier.html" class="swiper-slide header-slider__item">
+    <div class="header-slider__img">
+      <img
+        src="./img/header/slides/sl3.jpg"
+        width="260px"
+        height="260px"
+        alt="header-slide"
+      />
+    </div>
+    <span class="header-slider__title">Glacier<br />Lagoon</span>
+  </a>
+  <!-- slide end --><!-- slide -->
+<a href="./scenic.html" class="swiper-slide header-slider__item">
+    <div class="header-slider__img">
+      <img
+        src="./img/header/slides/sl4.jpg"
+        width="260px"
+        height="260px"
+        alt="header-slide"
+      />
+    </div>
+    <span class="header-slider__title">Northern<br />Lights</span>
+  </a>
+  <!-- slide end --><!-- slide -->
+<a href="./wild.html" class="swiper-slide header-slider__item">
+    <div class="header-slider__img">
+      <img
+        src="./img/header/slides/sl5.jpg"
+        width="260px"
+        height="260px"
+        alt="header-slide"
+      />
+    </div>
+    <span class="header-slider__title">Icelandic<br />Whales</span>
+  </a>
+  <!-- slide end --><!-- slide -->
+<a href="./reynisfjall.html" class="swiper-slide header-slider__item">
+    <div class="header-slider__img">
+      <img
+        src="./img/header/slides/sl6.jpg"
+        width="260px"
+        height="260px"
+        alt="header-slide"
+      />
+    </div>
+    <span class="header-slider__title">Peak of<br />Reynisfjall</span>
+  </a>
+  <!-- slide end --><!-- slide -->
+<a href="./wild.html" class="swiper-slide header-slider__item">
+    <div class="header-slider__img">
+      <img
+        src="./img/header/slides/sl7.jpg"
+        width="260px"
+        height="260px"
+        alt="header-slide"
+      />
+    </div>
+    <span class="header-slider__title">Icelandic<br />Sheeps</span>
+  </a>
+  <!-- slide end --><!-- slide -->
+<a href="./waterfalls.html" class="swiper-slide header-slider__item">
+    <div class="header-slider__img">
+      <img
+        src="./img/header/slides/sl8.jpg"
+        width="260px"
+        height="260px"
+        alt="header-slide"
+      />
+    </div>
+    <span class="header-slider__title">Icelandic<br />Waterfalls</span>
+  </a>
+  <!-- slide end --><!-- slide -->
+<a href="./wild.html" class="swiper-slide header-slider__item">
+    <div class="header-slider__img">
+      <img
+        src="./img/header/slides/sl9.jpg"
+        width="260px"
+        height="260px"
+        alt="header-slide"
+      />
+    </div>
+    <span class="header-slider__title">Icelandic<br />Horses</span>
+  </a>
+  <!-- slide end -->
+    </div>
+  </div>
+</div>
+<!-- Header-slider ends -->
+    <a href="#tour" class="header__seemore">
+      <span>SEE MORE</span>
+    </a>
+  </header>
+		<!-- ABOUT -->
+<section class="about">
+    <div class="about__row">
+      <div class="about__title">
+        <h3 class="h3">
+          About<br class="ex" />
+          Iceland
+        </h3>
+      </div>
+      <div class="about__column-left">
+        <div class="about__img">
+          <img
+            src="./img/about/img3.webp"
+            alt="img"
+            width="950px"
+            height="600px"
+          />
+        </div>
+      </div>
+      <div class="about__column-right">
+        <!-- swiper text -->
+<div class="swiper-container about__text">
+    <div class="swiper-wrapper about__text-wrapper">
+      <div class="swiper-slide about__text-slide">
+        <!-- text -->
+        <p class="answer">
+          Why Iceland? Because there's nowhere else like it! Iceland
+          is a land of fire and ice.
+        </p>
+        <p>
+          Iceland is a haven for nature lovers, with glaciers,
+          waterfalls, hot springs, and lava fields just waiting to be
+          explored. There are also plenty of cultural highlights to
+          uncover in the capital city of Reykjavik and beyond.
+        </p>
+        <p>
+          Iceland is perfect for leisure travelers, families, and
+          outdoor types. Plus, with must-see sights such as the Blue
+          Lagoon and Golden Circle, close to Reykjavík, it's ideal for
+          both short breaks and longer getaways.
+        </p>
+        <p>
+          What's more, Iceland's temperate climate makes it a great
+          year-round destination for visitors. In summer, the midnight
+          sun means your guests can soak up even more stunning
+          scenery, and in winter they could chase dazzling displays of
+          the Northern Lights. Thanks to the warming effects of the
+          Gulf Stream, Iceland enjoys temperate climates year round.
+          Regardless of the season, you'll be warmly welcomed by
+          Icelanders. We love to share our culture, and will make the
+          extra efforts to ensure that your stay, much like the
+          spectacular landscape, will never be forgotten.
+        </p>
+      </div>
+    </div>
+    <!-- buttons -->
+    <div class="about__text-btn">
+      <div class="swiper-button-prev about__text-btn-prev">
+        <svg class="svg-arrow-emp">
+          <use href="./img/icons/svg-sprite.svg#svg-arrow-emp" />
+        </svg>
+      </div>
+      <div class="swiper-button-next about__text-btn-next">
+        <svg class="svg-arrow-emp">
+          <use href="./img/icons/svg-sprite.svg#svg-arrow-emp" />
+        </svg>
+      </div>
+    </div>
+  </div>
+        <!-- img -->
+        <div class="about__img-row">
+          <div class="about__img-left">
+            <img
+              src="./img/about/img2.webp"
+              alt="Img2"
+              width="350px"
+              height="350px"
+            />
+          </div>
+          <div class="about__img-right">
+            <img
+              src="./img/about/img4.webp"
+              alt="Img4"
+              width="350px"
+              height="350px"
+            />
+          </div>
+        </div>
+        <!-- map -->
+        <div class="about__map">
+          <img src="./img/about/map2.png" alt="map" />
+        </div>
+      </div>
+    </div>
+  </section>
+		<!-- TOURS -->
+<section class="tours" id="tour">
+    <div class="title">
+      <h2 class="h2 border">Tours</h2>
+    </div>
+    <!-- Slider starts -->
+<div class="swiper tours-slider">
+    <div class="swiper-wrapper tours-slider__wrapper">
+        <!-- slide -->
+<div class="swiper-slide tours-slide tours-slide--one">
+    <div>
+      <p>Blue Ice Cave</p>
+      <a href="./cave.html">Read more</a>
+    </div>
+  </div>
+<!-- slide ends --><!-- slide -->
+<div class="swiper-slide tours-slide tours-slide--two">
+    <div>
+      <p>White Arctic fox</p>
+      <a href="./wild.html">Read more</a>
+    </div>
+  </div>
+<!-- slide ends --><!-- slide -->
+<div class="swiper-slide tours-slide tours-slide--three">
+    <div>
+      <p>Hiking Iceland</p>
+      <a href="./scenic.html">Read more</a>
+    </div>
+  </div>
+<!-- slide ends --><!-- slide -->
+<div class="swiper-slide tours-slide tours-slide--four">
+    <div>
+      <p>Icelandic waterfalls</p>
+      <a href="./waterfalls.html">Read more</a>
+    </div>
+  </div>
+<!-- slide ends --><!-- slide -->
+<div class="swiper-slide tours-slide tours-slide--five">
+    <div>
+      <p>Icelandic waterfalls</p>
+      <a href="./waterfalls.html">Read more</a>
+    </div>
+  </div>
+<!-- slide ends --><!-- slide -->
+<div class="swiper-slide tours-slide tours-slide--six">
+    <div>
+      <p>Peak of Reynisfjall</p>
+      <a href="./reynisfjall.html">Read more</a>
+    </div>
+  </div>
+<!-- slide ends --><!-- slide -->
+<div class="swiper-slide tours-slide tours-slide--seven">
+    <div>
+      <p>Blue Arctic fox</p>
+      <a href="./wild.html">Read more</a>
+    </div>
+  </div>
+<!-- slide ends --><!-- slide -->
+<div class="swiper-slide tours-slide tours-slide--eight">
+    <div>
+      <p>Hiking Iceland</p>
+      <a href="./scenic.html">Read more</a>
+    </div>
+  </div>
+<!-- slide ends --><!-- slide -->
+<div class="swiper-slide tours-slide tours-slide--nine">
+    <div>
+      <p>Plane Wreck</p>
+      <a href="./reynisfjall.html">Read more</a>
+    </div>
+  </div>
+<!-- slide ends --><!-- slide -->
+<div class="swiper-slide tours-slide tours-slide--ten">
+    <div>
+      <p>Icelandic sheeps</p>
+      <a href="./wild.html">Read more</a>
+    </div>
+  </div>
+<!-- slide ends --><!-- slide -->
+<div class="swiper-slide tours-slide tours-slide--eleven">
+    <div>
+      <p>Hiking Iceland</p>
+      <a href="./scenic.html">Read more</a>
+    </div>
+  </div>
+<!-- slide ends --><!-- slide -->
+<div class="swiper-slide tours-slide tours-slide--twelve">
+    <div>
+      <p>Puffins</p>
+      <a href="./wild.html">Read more</a>
+    </div>
+  </div>
+<!-- slide ends --><!-- slide -->
+<div class="swiper-slide tours-slide tours-slide--thirteen">
+    <div>
+      <p>Glacier Lagoon</p>
+      <a href="./glacier.html">Read more</a>
+    </div>
+  </div>
+<!-- slide ends -->
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- Slider ends -->
+    <!-- Iceland -->
+    <span class="tours__ic">Iceland</span>
+    <!-- quote -->
+    <div class="tours__quote">
+        <span class="quote">
+    Iceland is not a destination.<br />It is an adventure.
+</span>
+    </div>
+    <!-- Tours cards -->
+    <div class="tours__cards">
+      <div class="tours__cards-title">
+        <h3 class="h3 line">What do we offer to you?</h3>
+      </div>
+      <div class="swiper tours-card-slider">
+    <div class="swiper-wrapper tours-card-slider__wrapper">
+        <div class="swiper-slide tours-card__wrapper">
+    <div class="tours-card" id="golden">
+        <a href="./golden.html" class="tours-card__img">
+            <div class="tours-card__img-wrapper">
+                <img
+                src="./img/tours/cards/card1.webp"
+                width="400px"
+                height="300px"
+                alt="card"
+                />
+            </div>
+        </a>
+        <div class="tours-card__description">
+        <div class="tours-card__title">
+            <h4 class="h4">Golden circle</h4>
+        </div>
+        <div class="tours-card__details">
+            <div class="tours-card__text">
+            <p>
+                The Golden Circle showcases some of the most beautiful natural wonders of Iceland. Along the way you can see glaciers and volcanoes and of course incredible Thingvellir. The route is all about 300 km (190 mi) long, from Reykjavik into the southern uplands and back again.The Golden Circle consists of three equally stunning locations in Southwest Iceland: Thingvellir National Park, The Geysir Geothermal Area, Gullfoss Waterfall.
+            </p>
+            </div>
+            <div class="tours-card__price">
+            <span>100$</span>
+            </div>
+        </div>
+        </div>
+    </div>
+</div><div class="swiper-slide tours-card__wrapper">
+    <div class="tours-card" id="lagoon">
+        <a href="./glacier.html" class="tours-card__img">
+            <div class="tours-card__img-wrapper">
+                <img
+                src="./img/tours/cards/card2.webp"
+                width="400px"
+                height="300px"
+                alt="card"
+                />
+            </div>
+        </a>
+        <div class="tours-card__description">
+        <div class="tours-card__title">
+            <h4 class="h4">Glacier Lagoon</h4>
+        </div>
+        <div class="tours-card__details">
+            <div class="tours-card__text">
+            <p>
+                The Glacier lagoon in Iceland is close to highway number one, about 370 km (230 miles) east from Reykjavík and it is told to be one of the greatest wonders of nature in Iceland. This lagoon is a recent one, the result of a warming climate. The surface is at sea level and sea water flows into the lagoon at high tide. Huge blocks of ice constantly break off the glacier, Breiðamerkurjökull, and large icebergs float on the lagoon.
+            </p>
+            </div>
+            <div class="tours-card__price">
+            <span>80$</span>
+            </div>
+        </div>
+        </div>
+    </div>
+</div><div class="swiper-slide tours-card__wrapper">
+    <div class="tours-card" id="peak">
+        <a href="./reynisfjall.html" class="tours-card__img">
+            <div class="tours-card__img-wrapper">
+                <img
+                src="./img/tours/cards/card3.webp"
+                width="400px"
+                height="300px"
+                alt="card"
+                />
+            </div>
+        </a>
+        <div class="tours-card__description">
+        <div class="tours-card__title">
+            <h4 class="h4">The peak of Reynisfjall</h4>
+        </div>
+        <div class="tours-card__details">
+            <div class="tours-card__text">
+            <p>
+                The peak of Reynisfjall is well known for towering beside two of the most popular sites of the South, Reynisfjara and Reynisdrangar. Reynisfjara is a black-sand-beach, once voted one of the world's most beautiful stretches of non-tropical coastline. It is famous for its ethereal appearance, although is also gaining notoriety for its dangerous waves Reynisdrangar is composed of two basalt sea stacks that were once part of Reynisfjall.
+            </p>
+            </div>
+            <div class="tours-card__price">
+            <span>100$</span>
+            </div>
+        </div>
+        </div>
+    </div>
+</div><div class="swiper-slide tours-card__wrapper">
+    <div class="tours-card" id="waterfall">
+        <a href="./waterfalls.html" class="tours-card__img">
+            <div class="tours-card__img-wrapper">
+                <img
+                src="./img/tours/cards/card4.webp"
+                width="400px"
+                height="300px"
+                alt="card"
+                />
+            </div>
+        </a>
+        <div class="tours-card__description">
+        <div class="tours-card__title">
+            <h4 class="h4">Icelandic Waterfalls</h4>
+        </div>
+        <div class="tours-card__details">
+            <div class="tours-card__text">
+            <p>
+                We've got you covered with this extensive itinerary that covers all the best waterfalls in Iceland including an Iceland waterfalls map and waterfalls near Reykjavik. Iceland is a country full of impressive waterfalls, possibly over 10 thousand, due to its mountainous landscape, glaciers, and lots of rain and snow. It can be overwhelming to know which waterfalls in Iceland are worth spending your time to visit, although we would argue all are impressive.
+            </p>
+            </div>
+            <div class="tours-card__price">
+            <span>120$</span>
+            </div>
+        </div>
+        </div>
+    </div>
+</div><div class="swiper-slide tours-card__wrapper">
+    <div class="tours-card" id="cave">
+        <a href="./cave.html" class="tours-card__img">
+            <div class="tours-card__img-wrapper">
+                <img
+                src="./img/tours/cards/card5.webp"
+                width="400px"
+                height="300px"
+                alt="card"
+                />
+            </div>
+        </a>
+        <div class="tours-card__description">
+        <div class="tours-card__title">
+            <h4 class="h4">Blue Ice Cave</h4>
+        </div>
+        <div class="tours-card__details">
+            <div class="tours-card__text">
+            <p>
+                From mid-November to mid-March, temperatures are cold enough that the caves are stable and can be explored, and the best months are usually January and February. Ice caves are scattered all over Iceland. Some are normal caves with some amount of ice frozen inside and others are glacial caves with beautiful crystals of blue ice mesmerizing enough to give a thorough competition to the underwater wonders that we all admire.
+            </p>
+            </div>
+            <div class="tours-card__price">
+            <span>100$</span>
+            </div>
+        </div>
+        </div>
+    </div>
+</div><div class="swiper-slide tours-card__wrapper">
+    <div class="tours-card" id="wild">
+        <a href="./wild.html" class="tours-card__img">
+            <div class="tours-card__img-wrapper">
+                <img
+                src="./img/tours/cards/card6.webp"
+                width="400px"
+                height="300px"
+                alt="card"
+                />
+            </div>
+        </a>
+        <div class="tours-card__description">
+        <div class="tours-card__title">
+            <h4 class="h4">Wild nature</h4>
+        </div>
+        <div class="tours-card__details">
+            <div class="tours-card__text">
+            <p>
+                You'll experience the Icelandic horses that fill Reykjadalur Valley, the whales swimming off the coasts, wild arctic foxes and the famous puffins of the Westman Islands. You will be provided with a detailed itinerary when you book, so you don't need to spend weeks trying to plan your trip. When trying to arrange it alone, you may miss some of the best places to see wildlife in Iceland. Take advantage of this immersive experience.
+            </p>
+            </div>
+            <div class="tours-card__price">
+            <span>100$</span>
+            </div>
+        </div>
+        </div>
+    </div>
+</div><div class="swiper-slide tours-card__wrapper">
+    <div class="tours-card" id="scenic">
+        <a href="./scenic.html" class="tours-card__img">
+            <div class="tours-card__img-wrapper">
+                <img
+                src="./img/tours/cards/card7.webp"
+                width="400px"
+                height="300px"
+                alt="card"
+                />
+            </div>
+        </a>
+        <div class="tours-card__description">
+        <div class="tours-card__title">
+            <h4 class="h4">Hiking Iceland</h4>
+        </div>
+        <div class="tours-card__details">
+            <div class="tours-card__text">
+            <p>
+                Discover the best hiking in Iceland. In our complete guide, you'll learn what to pack, where to find the best hikes in Iceland, and which are the most beautiful and challenging. Find out whether there are any easy Iceland treks near Reykjavik and if Iceland's hiking trails are open throughout the year. Iceland seems sculpted with hikers in mind, a wildland with roaring rivers,mountainous canyons, and mystical valleys. Every region of the country offers fantastic trails.
+            </p>
+            </div>
+            <div class="tours-card__price">
+            <span>100$</span>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+    </div>
+    <!-- Tours card end -->
+    <div class="tours__bg"></div>
+  </section>
+		<!-- WANT -->
+<section class="want">
+    <div class="want__bg">
+      <div class="want__content">
+        <div class="want__content-text">
+          <span class="want__content-text-call" >Want to see it from your own eyes? </span>
+          <form action="" class="form-search">
+
+    <div class="form-search__row">
+        <label for="" class="form-search__label">
+            <span>Tours</span>
+            <input id="autoCompleteTours" name="country" type="text" class="form-search__input" placeholder="e.g Golden Circle" autocomplete="off">
+        </label>
+    
+        <label for="" class="form-search__label">
+            <span>Date and time</span>
+            <input id="datePicket" name="date" type="text" class="form-search__input" placeholder="MM/DD/YYYY" autocomplete="off">
+        </label>
+    </div>
+
+    <div class="form-search__button">
+        <button class="btn-light" type="button">
+            <p class="btn__text">Search</p>
+        </button>
+    </div>
+
+    
+
+</form>
+
+        </div>
+      </div>
+    </div>
+    <div class="want__quote">
+        <span class="quote">
+    I followed my heart.<br />And it led me to Iceland
+</span>
+    </div>
+    <!-- <div id="modal-1" data-modal class="fade-block none">
+      <div class="modal-window">
+        <button data-modal-close type="button" class="modal-window__close">
+          <svg class="svg-x">
+            <use href="./img/icons/svg-sprite.svg#svg-x" />
+          </svg>
+        </button>
+        <div class="modal-window__title">
+          <h4 class="h4">Leave a request</h4>
+        </div>
+        <form action="" class="modal-form">
+          <div class="modal-form__item">
+            <input
+              class="modal-form__input"
+              type="text"
+              name="tel"
+              placeholder="Cell Phone Number*"
+            />
+          </div>
+          <div class="modal-form__item">
+            <input
+              class="modal-form__input"
+              type="text"
+              name="name"
+              placeholder="Your Name (First-Family Name)"
+            />
+          </div>
+          <div class="modal-form__item">
+            <input
+              class="modal-form__input"
+              type="text"
+              name="time"
+              placeholder="The best time to call"
+            />
+          </div>
+          <p class="modal__text">
+            By submitting your contact information, you agree with terms of
+            personal data processing.
+          </p>
+          <div class="modal-form__item">
+            <button type="submit" class="btn">SEND</button>
+          </div>
+        </form>
+      </div>
+    </div> -->
+  </section>
+		<!-- TEAM -->
+<section class="team" id="team">
+    <div class="title">
+        <h2 class="h2 border">Team</h2>
+    </div>
+    <div class="team__row" id="features">
+        <div class="team-card feature">
+    <div class="team-card__img">
+      <img
+        src="./img/team/img1.webp"
+        width="174px"
+        height="174px"
+        alt="card"
+      />
+    </div>
+    <div class="team-card__header">
+      <h4 class="h4">Elena Moon</h4>
+      <p class="team-card__job">Tour guide and historian</p>
+    </div>
+    <p class="team-card__content">Tell you lots of interesting facts and legends about Iceland.</p>
+    <p class="team-card__experience">Experience as a guide: 5 years.</p>
+</div><div class="team-card feature">
+    <div class="team-card__img">
+      <img
+        src="./img/team/img2.webp"
+        width="174px"
+        height="174px"
+        alt="card"
+      />
+    </div>
+    <div class="team-card__header">
+      <h4 class="h4">Eduard Conor</h4>
+      <p class="team-card__job">Guide-instructor</p>
+    </div>
+    <p class="team-card__content">Build an unforgettable route and share the main secrets of hiking and claimbing.</p>
+    <p class="team-card__experience">Experience as a guide: 9 years.</p>
+</div><div class="team-card feature">
+    <div class="team-card__img">
+      <img
+        src="./img/team/img3.webp"
+        width="174px"
+        height="174px"
+        alt="card"
+      />
+    </div>
+    <div class="team-card__header">
+      <h4 class="h4">Moris Atterstone</h4>
+      <p class="team-card__job">Tour guide and photographer</p>
+    </div>
+    <p class="team-card__content">Helps you to make remarkable photoes of nature and wild animals.</p>
+    <p class="team-card__experience">Experience as a guide: 7 years.</p>
+</div>
+    </div>
+    <!-- Guides -->
+    <span class="team__gd">Guides</span>
+    <div class="team__bg"></div>
+  </section>
+		<!-- FEEDBACKS -->
+<section class="feedbacks" id="feedback">
+    <div class="title">
+      <h2 class="h2 border">Feedbacks</h2>
+    </div>
+    <div class="swiper feedback-slider">
+    <div class="swiper-wrapper feedback-slider__wrapper">
+      <!-- feedback-slider__item -->
+<div class="swiper-slide feedback-slider__item-wrapper">
+    <div class="feedback-slider__item">
+      <p>
+        Great experience in a well organized tour which fulfilled all our expectactions.
+      </p>
+      <span class="feedback-slider__name">Lois G.</span>
+    </div>
+</div><!-- feedback-slider__item -->
+<div class="swiper-slide feedback-slider__item-wrapper">
+    <div class="feedback-slider__item">
+      <p>
+        Very well organized, informative, would highly recommend as it's a great way to see Iceland.
+      </p>
+      <span class="feedback-slider__name">Alan D.</span>
+    </div>
+</div><!-- feedback-slider__item -->
+<div class="swiper-slide feedback-slider__item-wrapper">
+    <div class="feedback-slider__item">
+      <p>
+        The best Holiday in my life, Thanks Compass, we will repeat with you!
+      </p>
+      <span class="feedback-slider__name">Tony N.</span>
+    </div>
+</div><!-- feedback-slider__item -->
+<div class="swiper-slide feedback-slider__item-wrapper">
+    <div class="feedback-slider__item">
+      <p>
+        A nice variety of tours to choose from. Easy to book online. Extremely responsive customer service. If visiting the Land of Fire and Ice is on your wish list, Iceland Tours can definitely help you fulfill you wish!
+      </p>
+      <span class="feedback-slider__name">Cindy L.</span>
+    </div>
+</div><!-- feedback-slider__item -->
+<div class="swiper-slide feedback-slider__item-wrapper">
+    <div class="feedback-slider__item">
+      <p>
+        Seamless travel with fantastic accommodations and great recommendations. Our family had an amazing trip.
+      </p>
+      <span class="feedback-slider__name">Sonja S.</span>
+    </div>
+</div><!-- feedback-slider__item -->
+<div class="swiper-slide feedback-slider__item-wrapper">
+    <div class="feedback-slider__item">
+      <p>
+        Rápidos, eficaces, todos los bonos, reservas, etc. exactos y sin ningún problema, da mucha tranquilidad.
+      </p>
+      <span class="feedback-slider__name">José J.</span>
+    </div>
+</div><!-- feedback-slider__item -->
+<div class="swiper-slide feedback-slider__item-wrapper">
+    <div class="feedback-slider__item">
+      <p>
+        They are wonderful. Booking your trip through them will never let you down. I scheduled an 8-day self-drive trip and had no problems. They are excellent communicators.
+      </p>
+      <span class="feedback-slider__name">Chiral S.</span>
+    </div>
+</div>
+    </div>
+    <!-- btns -->
+    <div class="feedback-slider__btn">
+      <div class="swiper-button-prev feedback-slider__btn-prev">
+        <svg class="svg-arrow-emp">
+          <use href="./img/icons/svg-sprite.svg#svg-arrow-emp" />
+        </svg>
+      </div>
+      <div class="swiper-button-next feedback-slider__btn-next">
+        <svg class="svg-arrow-emp">
+          <use href="./img/icons/svg-sprite.svg#svg-arrow-emp" />
+        </svg>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="feedback-slider__pagination swiper-pagination"></div>
+  </div>
+    <div class="feedback__bg"></div>
+  </section>
+		<!-- ARTICLES -->
+<section class="articles">
+    <div class="articles__title">
+      <h2 class="h2 border">Articles</h2>
+    </div>
+    <div class="articles-area">
+      <a href="#!" class="articles-area__item articles-area__item--one">
+        <span>Reykjavik</span>
+      </a>
+      <a href="#!" class="articles-area__item articles-area__item--two">
+        <span>Geothermal Pools</span>
+      </a>
+      <a href="#!" class="articles-area__item articles-area__item--three">
+        <span>Modern architecture</span>
+      </a>
+      <a href="#!" class="articles-area__item articles-area__item--four">
+        <span>Fisherman Iceland</span>
+      </a>
+      <a href="#!" class="articles-area__item articles-area__item--five">
+        <span>Road trip</span>
+      </a>
+      <a href="#!" class="articles-area__item articles-area__item--six">
+        <span>Icelandic village</span>
+      </a>
+      <a href="#!" class="articles-area__item articles-area__item--seven">
+        <span>Aerial Photography</span>
+      </a>
+    </div>
+    <div class="articles__bg"></div>
+  </section>
+		<!-- SNOW -->
+<section class="snow-fall">
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+  </section>
+		<footer class="footer">
+	<div class="footer__row">
+	  <nav class="footer__nav">
+		<a href="#tour" class="footer__nav-item">Tours</a>
+		<a href="#team" class="footer__nav-item">Team</a>
+		<a href="./contacts.html" class="footer__nav-item">Contact Us</a>
+	  </nav>
+	  <div class="footer__socials">
+		<a class="social-icon__wrapper" href="#">
+    <svg class="svg-facebook social-icon">
+      <use href="./img/icons/svg-sprite.svg#svg-facebook" />
+    </svg>
+</a>
+		<a class="social-icon__wrapper" href="#">
+    <svg class="svg-pin social-icon">
+      <use href="./img/icons/svg-sprite.svg#svg-pin" />
+    </svg>
+</a>
+		<a class="social-icon__wrapper" href="#">
+    <svg class="svg-vk social-icon">
+      <use href="./img/icons/svg-sprite.svg#svg-vk" />
+    </svg>
+</a>
+	  </div>
+	</div>
+	<div class="footer__copyright">
+	  <p>Copyright © 2023 <span>Iceland</span>. All rights are reserved.</p>
+	</div>
+  </footer>
+
+		<script src="./js/index.bundle.js"></script>
+		<!-- preload -->
+		<script>
+			window.onload = function () {
+			  document.body.classList.add("loaded_hiding");
+			  window.setTimeout(function () {
+				document.body.classList.add("loaded");
+				document.body.classList.remove("loaded_hiding");
+			  }, 500);
+			};
+		</script>
+	</body>
+</html>

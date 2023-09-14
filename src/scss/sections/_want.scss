@@ -1,0 +1,150 @@
+.want {
+    position: relative;
+    padding-bottom: 80px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-family: 'Playfair Display SC', serif;
+    transition: all 0.5s;
+
+    
+
+    @media (max-width:1099px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @media (max-width:899px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    // @media (max-width:599px){
+    //     display: none;
+    // }
+
+}
+
+.want__bg {
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./../img/want/bg1.webp);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.2);
+    opacity: 1;
+    position: relative;
+    transition: all 0.5s;
+
+    &:hover {
+        filter: grayscale(1);
+    }
+
+
+
+    @media (max-width:699px) {
+        height: 400px;
+    }
+    
+}
+
+
+
+.want__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    
+
+}
+
+.want__content-text {
+    position: relative;
+    width: 90%;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    z-index: 4;
+
+    @media (max-width:899px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    button {
+        position: relative;
+        z-index: 4;
+    }
+
+    @media (max-width:699px){
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    @media(max-width:399px){
+        width: 100%;
+    }
+
+    
+
+    
+}
+
+.want__content-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(37, 37, 37, 0.3);
+    mix-blend-mode: normal;
+    filter: blur(3px);
+    z-index: 0;
+    
+}
+
+.want__content-text-call {
+    margin-bottom: 15px;
+    display: block;
+    position: relative;
+    z-index: 4;
+    color: $text-color-bright;
+    font-size: 50px;
+    text-transform: uppercase;
+
+    @media (max-width:1670px){
+        font-size: 35px;
+    }
+
+
+    @media (max-width:800px) {
+        font-size: 30px;
+    }
+
+    @media(max-width:599px){
+        display: none;
+    }
+}
+
+.want__quote{
+    position: relative;
+    z-index: -1;
+    margin-top:80px;
+    text-align: center;
+
+    @media (max-width:599px) {
+        display: none;
+        margin-top: 0;
+    }
+}
+

@@ -1,0 +1,42 @@
+.social-icon__wrapper {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border:1px solid $background-color-accent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.social-icon__wrapper:hover {
+    .social-icon {
+        animation: move-down;
+        animation-duration: 1s;
+    }
+}
+
+.social-icon {
+    transition: all 0.5s;
+    
+}
+
+@keyframes move-down {
+    from {
+        
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+
+    60% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
