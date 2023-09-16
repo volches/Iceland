@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Iceland. Golden Circle.</title>
+		<meta name="description" content="Tourism." />
+    	<meta name="keywords" content="travelling, destinations, tours" />
+
+    	<meta property="og:type" content="website" />
+    	<meta property="og:title" content="Tourism." />
+    	<meta property="og:description" content="Tourism." />
+    	<meta property="og:image" content="./img/opengraph.jpg" />
+
+		<!-- Favicons -->
+		<link
+		rel="apple-touch-icon"
+		sizes="180x180"
+		href="./img/favicon/apple-touch-icon.png"
+	  	/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./img/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./img/favicon/favicon-16x16.png"
+		/>
+	  	<link rel="manifest" href="./img/favicon/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="./img/favicon/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+
+
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- preload styles -->
+		<style>
+			.preloader {
+			  position: fixed;
+			  left: 0;
+			  top: 0;
+			  right: 0;
+			  bottom: 0;
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			  background-color: #fffcf9;
+			  z-index: 1001;
+			}
+	  
+			.preloader__image {
+			  position: relative;
+			  width: 130px;
+			  height: 130px;
+			  z-index: 2000;
+			  animation: preloader-rotate;
+			  animation-duration: 5s;
+			  animation-iteration-count: infinite;
+			}
+	  
+			@keyframes preloader-rotate {
+			  from {
+				transform: rotate(0);
+			  }
+			  to {
+				transform: rotate(360deg);
+			  }
+			}
+	  
+			.loaded_hiding .preloader {
+			  transition: 0.3s opacity;
+			  opacity: 0;
+			}
+	  
+			.loaded .preloader {
+			  display: none;
+			}
+		</style>
+		  <!-- preload end -->
+	</head>
+	<body onselectstart="return false" oncopy="return false">
+		@@include('sections/preloader.html')
+		@@include('sections/header-inner.html',{
+            "page": "wild",
+            "name1": "Wild",
+            "name2": "Nature"
+        })
+        @@include('sections/about-inner.html',{
+            "img1": "wild/img1.webp",
+            "text1":"What is the Golden Circle?",
+			"text2": "The Golden Circle in Iceland is the most popular tourist route in the country covering roughly 190 miles beginning in Reykjavik, Iceland's capital. The Golden Circle route in Iceland is the perfect introduction to the unique and remarkable natural wonders of the country. This iconic route spans 190 miles through Iceland's unforgettable nature bringing you some of the most spectacular landscapes and adventures, with plenty of opportunities for relaxation in-between. The name golden circle has derived from the term “Gullfoss” which means golden waterfall. This place is generally preferred by the majority of tourists. If you want to visit Iceland, then we can say that Iceland is popular in this place. It takes around 300 kilometers to visit from Reykjavík to the southern uplands of Iceland. The region is popular for travel-related tours and excursions in Iceland. The Golden Circle Tour from a long time has been popular among visitors to Iceland for its most popular natural wonders of South Iceland, Geysir geyser, Gullfoss waterfall, and the majestic Pingvellir. You will also find many volcanoes and glaciers while traveling through this route. The last route is Gullfoss waterfall where you will be allowed to travel free of cost. Besides these 3 popular places, you will find other routes also such as Kerio volcanic crater, the town of skalholt cathedral and Nesjavellir.",
+            "img2": "wild/img2.webp",
+            "img3": "wild/img3.webp"
+        })
+		@@include('sections/footer.html')
+		<script src="./js/inner.bundle.js"></script>
+		<!-- preload -->
+		<script>
+			window.onload = function () {
+			  document.body.classList.add("loaded_hiding");
+			  window.setTimeout(function () {
+				document.body.classList.add("loaded");
+				document.body.classList.remove("loaded_hiding");
+			  }, 500);
+			};
+		</script>
+	</body>
+</html>

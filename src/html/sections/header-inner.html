@@ -1,0 +1,22 @@
+<!-- HEADER -->
+<header class="header-inner">
+    <div class="@@page header-inner__bg"></div>
+    <!-- header__nav -->
+    @@include('./../blocks/header__nav.html',{
+        "link1":"./index.html",
+        "name1":"Home",
+        "link2":"./index.html#tour",
+        "name2":"Tours",
+        "link3":"./index.html#team",
+        "name3":"Our team",
+        "link4":"./contacts.html",
+        "name4":"Contact Us",
+    })
+
+    <!-- Header center -->
+    <div class="header-inner__center">
+      <div class="header-inner__title">
+        <h1 class="h1 h1--inner">@@name1 <br />@@name2</h1>
+      </div>
+    </div>
+</header>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Iceland. Glacier Lagoon.</title>
+		<meta name="description" content="Tourism." />
+    	<meta name="keywords" content="travelling, destinations, tours" />
+
+    	<meta property="og:type" content="website" />
+    	<meta property="og:title" content="Tourism." />
+    	<meta property="og:description" content="Tourism." />
+    	<meta property="og:image" content="./img/opengraph.jpg" />
+
+		<!-- Favicons -->
+		<link
+		rel="apple-touch-icon"
+		sizes="180x180"
+		href="./img/favicon/apple-touch-icon.png"
+	  	/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./img/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./img/favicon/favicon-16x16.png"
+		/>
+	  	<link rel="manifest" href="./img/favicon/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="./img/favicon/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+
+
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- preload styles -->
+		<style>
+			.preloader {
+			  position: fixed;
+			  left: 0;
+			  top: 0;
+			  right: 0;
+			  bottom: 0;
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			  background-color: #fffcf9;
+			  z-index: 1001;
+			}
+	  
+			.preloader__image {
+			  position: relative;
+			  width: 130px;
+			  height: 130px;
+			  z-index: 2000;
+			  animation: preloader-rotate;
+			  animation-duration: 5s;
+			  animation-iteration-count: infinite;
+			}
+	  
+			@keyframes preloader-rotate {
+			  from {
+				transform: rotate(0);
+			  }
+			  to {
+				transform: rotate(360deg);
+			  }
+			}
+	  
+			.loaded_hiding .preloader {
+			  transition: 0.3s opacity;
+			  opacity: 0;
+			}
+	  
+			.loaded .preloader {
+			  display: none;
+			}
+		</style>
+		  <!-- preload end -->
+	</head>
+	<body onselectstart="return false" oncopy="return false">
+		<!-- PRELOADE -->
+<section class="preloader">
+    <img
+      class="preloader__image"
+      src="./img/preloader/compass-preloader.png"
+      width="320px"
+      height="320px"
+      alt="compass"
+    />
+</section>
+<!-- preload end -->
+		<!-- HEADER -->
+<header class="header-inner">
+    <div class="glacier header-inner__bg"></div>
+    <!-- header__nav -->
+     <!-- header__nav -->
+ <div class="header__nav">
+  <button class="logo btn-up">
+    <img
+      src="./img/icons/logo.png"
+      width="70px"
+      height="70px"
+      alt="logo"
+    />
+  </button>
+  <!-- nav -->
+<nav class="nav" id="nav">
+    <ul class="nav__list-add">
+      <li><a href="./index.html" class="nav__a">Home</a></li>
+      <li><a href="#feedback" class="nav__a">Feedbacks</a></li>
+      <li><a href="./contacts.html" class="nav__a">Contact Us</a></li>
+    </ul>
+    <div class="nav__top border">Tours</div>
+    <ul class="nav__list">
+      <li><a href="./golden.html" class="nav__a">Golden circle</a></li>
+      <li><a href="./glacier.html" class="nav__a">Glacier Lagoon</a></li>
+      <li>
+        <a href="./reynisfjall.html" class="nav__a"
+          >The peak of Reynisfjall</a
+        >
+      </li>
+      <li>
+        <a href="./waterfalls.html" class="nav__a"
+          >Icelandic Waterfalls</a
+        >
+      </li>
+      <li><a href="./cave.html" class="nav__a">Blue Ice Cave</a></li>
+      <li><a href="./wild.html" class="nav__a">Wild Nature</a></li>
+      <li><a href="./scenic.html" class="nav__a">Hiking Iceland</a></li>
+    </ul>
+    <span class="nav__ic">Iceland</span>
+    <div class="nav__bg"></div>
+  </nav>
+  <!-- nav end -->
+  <ul class="header__nav-list" id="header__nav-list">
+    <li><a href="./index.html" class="nav__a">Home</a></li>
+    <li><a href="./index.html#tour" class="nav__a">Tours</a></li>
+    <li><a href="./index.html#team" class="nav__a">Our team</a></li>
+    <li><a href="./contacts.html" class="nav__a">Contact Us</a></li>
+  </ul>
+  <!-- nav-icon -->
+<button class="nav-icon" id="nav-icon">
+    <div class="nav-icon__middle"></div>
+</button>
+<!-- nav-icon end -->
+</div>
+
+    <!-- Header center -->
+    <div class="header-inner__center">
+      <div class="header-inner__title">
+        <h1 class="h1 h1--inner">Glacier <br />Lagoon</h1>
+      </div>
+    </div>
+</header>
+        <!-- ABOUT -->
+<section class="about-inner">
+    <div class="container">
+      <div class="about-inner__row">
+        <div class="about-inner__title">
+          <h3 class="h3 border">About</h3>
+        </div>
+        <div class="about-inner__column-left">
+          <div class="about-inner__img">
+            <img
+              src="./img/glacier/img1.webp"
+              alt="img"
+              width="660px"
+              height="610px"
+            />
+          </div>
+        </div>
+        <div class="about-inner__column-right">
+          <!-- swiper text -->
+          <div class="swiper-container about-inner__text">
+            <div class="swiper-wrapper about-inner__text-wrapper">
+              <div class="swiper-slide about-inner__text-slide">
+                <!-- text -->
+                <p class="answer">What is the Golden Circle?</p>
+                <p>The Golden Circle in Iceland is the most popular tourist route in the country covering roughly 190 miles beginning in Reykjavik, Iceland's capital. The Golden Circle route in Iceland is the perfect introduction to the unique and remarkable natural wonders of the country. This iconic route spans 190 miles through Iceland's unforgettable nature bringing you some of the most spectacular landscapes and adventures, with plenty of opportunities for relaxation in-between. The name golden circle has derived from the term “Gullfoss” which means golden waterfall. This place is generally preferred by the majority of tourists. If you want to visit Iceland, then we can say that Iceland is popular in this place. It takes around 300 kilometers to visit from Reykjavík to the southern uplands of Iceland. The region is popular for travel-related tours and excursions in Iceland. The Golden Circle Tour from a long time has been popular among visitors to Iceland for its most popular natural wonders of South Iceland, Geysir geyser, Gullfoss waterfall, and the majestic Pingvellir. You will also find many volcanoes and glaciers while traveling through this route. The last route is Gullfoss waterfall where you will be allowed to travel free of cost. Besides these 3 popular places, you will find other routes also such as Kerio volcanic crater, the town of skalholt cathedral and Nesjavellir.</p>
+              </div>
+            </div>
+            <!-- buttons -->
+            <div class="about-inner__text-btn">
+              <div class="swiper-button-prev about-inner__text-btn-prev">
+                <svg class="svg-arrow-emp">
+                  <use href="./img/icons/svg-sprite.svg#svg-arrow-emp" />
+                </svg>
+              </div>
+              <div class="swiper-button-next about-inner__text-btn-next">
+                <svg class="svg-arrow-emp">
+                  <use href="./img/icons/svg-sprite.svg#svg-arrow-emp" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- img -->
+          <div class="about-inner__img-row">
+            <div class="about-inner__img-left">
+              <img
+                src="./img/glacier/img2.webp"
+                alt="img2"
+                width="308px"
+                height="350px"
+              />
+            </div>
+            <div class="about-inner__img-right">
+              <img
+                src="./img/glacier/img3.webp"
+                alt="img3"
+                width="308px"
+                height="350px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+		<footer class="footer">
+	<div class="footer__row">
+	  <nav class="footer__nav">
+		<a href="#tour" class="footer__nav-item">Tours</a>
+		<a href="#team" class="footer__nav-item">Team</a>
+		<a href="./contacts.html" class="footer__nav-item">Contact Us</a>
+	  </nav>
+	  <div class="footer__socials">
+		<a class="social-icon__wrapper" href="#">
+    <svg class="svg-facebook social-icon">
+      <use href="./img/icons/svg-sprite.svg#svg-facebook" />
+    </svg>
+</a>
+		<a class="social-icon__wrapper" href="#">
+    <svg class="svg-pin social-icon">
+      <use href="./img/icons/svg-sprite.svg#svg-pin" />
+    </svg>
+</a>
+		<a class="social-icon__wrapper" href="#">
+    <svg class="svg-vk social-icon">
+      <use href="./img/icons/svg-sprite.svg#svg-vk" />
+    </svg>
+</a>
+	  </div>
+	</div>
+	<div class="footer__copyright">
+	  <p>Copyright © 2023 <span>Iceland</span>. All rights are reserved.</p>
+	</div>
+  </footer>
+
+		<script src="./js/inner.bundle.js"></script>
+		<!-- preload -->
+		<script>
+			window.onload = function () {
+			  document.body.classList.add("loaded_hiding");
+			  window.setTimeout(function () {
+				document.body.classList.add("loaded");
+				document.body.classList.remove("loaded_hiding");
+			  }, 500);
+			};
+		</script>
+	</body>
+</html>

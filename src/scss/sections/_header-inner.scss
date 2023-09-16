@@ -1,0 +1,153 @@
+.header-inner {
+    position: relative;
+    color: $text-color-bright;
+    overflow: hidden;
+    height: 600px;
+
+    @media(max-width:1299px) {
+        height: 400px;
+    }
+
+    @media (max-width:599px) {
+        height: 300px;
+    }  
+}
+
+
+
+.header-inner__bg {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    animation: heading linear;
+    animation-duration: 15s;
+    transition-delay: 5s;
+    animation-iteration-count: infinite;
+    transform: scale(1.2);
+    transform-origin: left bottom;
+    z-index: 1;
+
+    @media(max-width:1299px) {
+        height: 400px;
+    }
+
+    @media (max-width:599px) {
+        height: 300px;
+    }  
+    
+
+    &::before {
+        @extend %overlay4;
+        z-index: 2;
+    }
+
+}
+
+.reynisfjall.header-inner__bg {
+    @include bgImage ("./../img/reynisfjall/bg1.webp");
+
+    @media(max-width:1299px){
+        @include bgImage ("./../img/reynisfjall/bg400.webp");
+    }
+
+    @media(max-width:599px){
+        @include bgImage ("./../img/reynisfjall/bg300.webp");
+    }
+}
+
+.golden.header-inner__bg {
+    @include bgImage ("./../img/golden/bg1.webp");
+
+    @media(max-width:1299px){
+        @include bgImage ("./../img/golden/bg400.webp");
+    }
+
+    @media(max-width:599px){
+        @include bgImage ("./../img/golden/bg300.webp");
+    }
+}
+
+.glacier.header-inner__bg {
+    @include bgImage ("./../img/glacier/bg1.webp");
+
+    @media(max-width:1299px){
+        @include bgImage ("./../img/glacier/bg400.webp");
+    }
+
+    @media(max-width:599px){
+        @include bgImage ("./../img/glacier/bg300.webp");
+    }
+}
+
+.waterfall.header-inner__bg {
+    @include bgImage ("./../img/waterfall/bg1.webp");
+    filter: grayscale(0.5);
+
+    @media(max-width:1299px){
+        @include bgImage ("./../img/waterfall/bg400.webp");
+    }
+
+    @media(max-width:599px){
+        @include bgImage ("./../img/waterfall/bg300.webp");
+    }
+}
+
+.cave.header-inner__bg {
+    @include bgImage ("./../img/cave/bg1.webp");
+    filter: grayscale(0.5);
+
+    @media(max-width:1299px){
+        @include bgImage ("./../img/cave/bg400.webp");
+    }
+
+    @media(max-width:599px){
+        @include bgImage ("./../img/cave/bg300.webp");
+    }
+}
+
+.wild.header-inner__bg {
+    @include bgImage ("./../img/wild/bg1.webp");
+    filter: grayscale(0.5);
+
+    @media(max-width:1299px){
+        @include bgImage ("./../img/wild/bg400.webp");
+    }
+
+    @media(max-width:599px){
+        @include bgImage ("./../img/wild/bg300.webp");
+    }
+    
+}
+
+.scenic.header-inner__bg {
+    @include bgImage ("./../img/scenic/bg1.webp");
+    filter: grayscale(0.5);
+
+    @media(max-width:1299px){
+        @include bgImage ("./../img/scenic/bg400.webp");
+        filter: grayscale(0.5);
+    }
+
+    @media(max-width:599px){
+        @include bgImage ("./../img/scenic/bg300.webp");
+        filter: grayscale(0.5);
+    }
+    
+}
+
+
+.header-inner__center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 5;
+    text-align: center;
+}
+
+.header-inner__title {
+    position: relative;
+    z-index: 6;
+}
+
