@@ -1,0 +1,32 @@
+<!-- CONTACTS -->
+<section class="contacts-inner">
+    <div class="container">
+      <div class="title">
+        @@include('./../blocks/title.html',{
+            "name": "Contact Us"
+        })
+      </div>
+      <div class="contacts-inner__row">
+        <div class="contacts-inner__row-title">
+          <h4 class="h4">Get in touch with Compass</h4>
+          <p>
+            If you would like to learn more about our destinations and tours
+            or give us a feedback regarding our services, feel free to
+            contact us.
+          </p>
+        </div>
+        
+        @@include('./../blocks/contacts-cards__row.html')
+      </div>
+    </div>
+    <!-- Compass -->
+    <span class="contacts-inner__com">Compass</span>
+    <!-- Quote -->
+    <div class="contacts-inner__quote">
+        @@include('./../blocks/quote.html',{
+            "name1": "Travel is the only thing you buy",
+            "name2": "that makes you richer."
+        })
+    </div>
+    <div class="contacts-inner__bg"></div>
+  </section>

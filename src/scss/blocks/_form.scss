@@ -1,0 +1,138 @@
+.form {
+    position: relative;
+    width: 100%;
+    padding: 50px 40px 40px;
+    background-color: #1e2022c5;
+    border: 1px solid $background-color-accent;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-right: 3px solid #000;
+        border-bottom: 3px solid #000;
+        filter: blur(3px);
+        bottom: -5px;
+        right: -5px;
+        z-index: -1;
+        opacity: 1;
+    }
+
+    
+
+    /*Tablet*/
+    @media (max-width: 1199px) {
+        width: 100%;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding-top: 29px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    /* XS Mobile */
+    @media (max-width: 599px) {
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.form__title {
+    text-align: center;
+    margin-bottom: 50px;
+
+    
+
+    /* XS Mobile */
+    @media (max-width: 599px) {
+        font-size: 24px;
+        line-height: 31px;
+    }
+}
+
+.form__group {
+    margin-bottom: 60px;
+
+    /* XS Mobile */
+    @media (max-width: 599px) {
+        margin-bottom: 30px;
+    }
+}
+
+.form__group:last-of-type{
+    @media (max-width: 599px) {
+        margin-bottom: 20px;
+    }
+}
+
+
+.form__group-title {
+    margin-bottom: 25px;
+    font-family: 'Playfair Display SC', serif;
+
+    /* XS Mobile */
+    @media (max-width: 599px) {
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+
+
+.form__group-row {
+    display: flex;
+    justify-content: space-between;
+
+    /* XS Mobile */
+    @media (max-width: 599px) {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+.input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    padding: 12px 20px 15px;
+    background-color: transparent ;
+    border-bottom: 1px solid $background-color-accent;
+
+    font-size: 18px;
+    line-height: 23px;
+
+    /* XS Mobile */
+    @media (max-width: 599px) {
+        padding-left: 15px;
+    }
+}
+
+.form__group-row > .input + .input{
+    margin-left: 10px;
+
+    /* XS Mobile */
+    @media (max-width: 599px) {
+        margin-left: 0;
+    }
+}
+
+.form__group-row > .input:only-of-type {
+    margin-bottom: 20px;
+}
+
+.input::placeholder {
+    color: $background-color-accent;
+}
+
+.form__text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

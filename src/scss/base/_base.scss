@@ -109,7 +109,8 @@ body {
     font-size: 16px;
     line-height: 1.6;
     // background-color:  #1a1a1d;
-    background-color: #1e2022;
+    background-color: $background-color;
+    color: $text-color;
     position: relative;
     overflow-x: hidden;
 

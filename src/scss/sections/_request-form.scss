@@ -1,0 +1,226 @@
+// contacts-form
+
+.request-form {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 70px;
+
+    @media (max-width:599px) {
+        padding-bottom: 30px;
+    }
+
+}
+.request-form__title{
+    text-align: center;
+    margin-bottom: 50px;
+
+    @media (max-width:899px){
+        margin-bottom: 30px;
+    }
+}
+
+.request-form__row {
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width:1299px) {
+        justify-content: unset;
+        column-gap: 35px;
+    }
+
+    @media (max-width:899px) {
+        flex-direction: column-reverse;
+        row-gap: 40px;
+    }
+}
+
+.request-form__column-left {
+    width: 48%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width:899px){
+        width: 100%;
+    }
+}
+
+.request-form__column-right {
+    width: 48%;
+    flex-shrink: 0;
+
+    @media (max-width:899px){
+        width: 100%;
+    }
+}
+
+
+.request-form__description {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-shrink: 0;
+
+    @media (max-width:899px){
+        display: none;
+    }
+
+   
+}
+
+.request-form__description-right {
+    display: none;
+
+    @media(max-width:899px) {
+        display: block;
+        margin-bottom: 30px;
+    }
+}
+
+.request-form__description-title {
+    margin-bottom: 10px;
+}
+
+.request-form__description-title p{
+    font-size: 18px;
+}
+
+.request-form__description span {
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    height: 2px;
+    background-color: $background-color-accent;
+
+    @media (max-width:899px){
+       display: none;
+    }
+}
+
+.request-form__description span::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 30px;
+    height: 2px;
+    transform: rotate(-15deg);
+    background-color: $background-color-accent;
+
+    
+}
+
+.request-form__description span::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    width: 30px;
+    height: 2px;
+    transform: rotate(15deg);
+    background-color: $background-color-accent;
+}
+
+
+
+
+// IMG row
+
+.request-form__img-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
+    height: 100%;
+
+    @media (max-width:899px) {
+        height: 600px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    @media (max-width:599px) {
+        height: 500px;
+        gap: 15px;
+    }
+
+    @media (max-width:399px) {
+        height: 300px;
+    }
+
+}
+
+.request-form__img-one {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-image: url(./../img/request/img1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width:899px){
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+.request-form__img-two {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-image: url(./../img/request/img3.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width:899px){
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+}
+
+
+.request-form__img-three {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-image: url(./../img/request/img2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width:899px){
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// request-form__bg
+.request-form__bg {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(180deg, rgb(30, 32, 34) 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #1e2022 92.19%), url(./../img/request/bg.jpg);
+    height: 1200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -3;
+
+    @media (max-width:899px){
+        height: 1100px;
+    }
+}
