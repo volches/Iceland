@@ -18,3 +18,9 @@
 .no-scroll {
 	overflow-y: hidden;
 }
+
+.smooth-transition {
+	-webkit-transition-timing-function: linear !important;
+	-o-transition-timing-function: linear !important;
+	transition-timing-function: linear !important;
+}

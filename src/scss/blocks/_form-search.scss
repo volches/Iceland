@@ -53,6 +53,13 @@
 	&::placeholder {
 		color: $background-color;
 	}
+
+	@media (max-width:620px){
+		display: block;
+		width: 100%;
+	}
+
+
 }
 
 .form-search__button {
