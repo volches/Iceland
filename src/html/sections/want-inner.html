@@ -1,0 +1,34 @@
+ <!-- WANT -->
+ <section class="want-inner @@name">
+    <div class="container">
+      <div class="want-inner__quote">
+        @@include('./../blocks/quote.html',{
+            "name1": "@@name1",
+            "name2": "@@name2"
+        })
+      </div>
+      <div class="want-inner__bg-wrapper">
+        <div class="want-inner__bg">
+          <div class="want-inner__content">
+            <div class="want-inner__content-title">
+              <span>Want to see it from your own eyes? </span>
+              <button
+                data-modal-button="modal-1"
+                class="btn-light mb-1"
+                type="button"
+              >
+                <p class="btn__text">Booking</p>
+              </button>
+            </div>
+          </div>
+          <span class="want-inner__bg-border-right"></span>
+          <span class="want-inner__bg-border-left"></span>
+        </div>
+      </div>
+      <a href="./index.html#tour" class="want-inner__see">
+        <span class="want-inner__see-text">See more places to visit</span>
+        <span class="want-inner__see-arrow"></span>
+      </a>
+    </div>
+    @@include('./../blocks/modal.html')
+  </section>
