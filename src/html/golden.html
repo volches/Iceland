@@ -102,6 +102,51 @@
             "img2": "golden/img2.webp",
             "img3": "golden/img3.webp"
         })
+		<!-- INNER_TEXT -->
+		<section class="inner-text">
+			<div class="container">
+			  <div class="inner-text__text">
+				<p>
+				  The Golden Circle itinerary is an easy and efficient way to see
+				  three of Iceland's top attractions in a day, whether you take a
+				  group tour or opt for driving yourself. Each stop offers insight
+				  into Iceland's geologic history, not to mention excellent photo
+				  opportunities.
+				</p>
+				<p>
+				  The Golden Circle consists of three equally stunning locations in
+				  Southwest Iceland:
+				</p>
+				<ul>
+				  <li>Thingvellir National Park</li>
+				  <li>The Geysir Geothermal Area</li>
+				  <li>Gullfoss Waterfall</li>
+				</ul>
+				<p>
+				  Only the city of Reykjavik and the Blue Lagoon compete with these
+				  destinations in terms of popularity, and the reasons for the
+				  Golden Circle's fame are numerous.
+				</p>
+			  </div>
+			</div>
+		</section>
+		@@include('sections/cards.html',{
+			"page": "golden",
+			"name1": "Thingvellir",
+			"img1": "golden/cards/img3.webp",
+			"text1": "Thingvellir National Park is a unique site in Iceland as its both historically significant as well as being a geological wonder. It has the honor of being the first of Iceland's three national parks to be established. It's also the only one that has been granted UNESCO World Heritage Site status. The park is only 29 miles (47 kilometers) from Reykjavik. It's a place where dramatic geology meets a millennium of fascinating history. Here, visitors to Thingvellir can discover the roots of this island's formation and how the Icelandic settlers formed their leaderless society.The park's unique geology comes from its location between the North American and Eurasian tectonic plates, which create the rift valley that runs through Iceland.",
+			"name2": "Geysir",
+			"img2": "golden/cards/img2.webp",
+			"text2": "The second stop on the Golden Circle is the Geysir Geothermal Area, located within the Haukadalur valley. It's a 37-mile (60-kilometer) drive from Thingvellir. Steaming vents and chimneys are visible along the way and notably concentrated in the village of Laugarvatn, located halfway between Thingvellir and Geysir. This settlement has a spa heated by hot water currents beneath the ground's surface. Its steam rooms sit on top of bubbling hot pots that reach a sweltering 140 F (60 C). However, at Haukadalur valley, this geothermal activity becomes even more intense. Visitors can see the steam rising from miles away. Many hot pools, clay pots, and fumaroles dot the area. Minerals vividly color the hills and soil.",
+			"name3": "Gullfoss",
+			"img3": "golden/cards/img1.webp",
+			"text3": "The third and final stopon the route of the Golden Circle is one of the most spectacular waterfalls in Iceland - Gullfoss.This is the landmark from which the Golden Circle draws its name, as Gullfoss directly translates to Golden Fall. Visitors can find the waterfall less than ten minutes down the road from Geysir. This powerful waterfall is located in a plunging, ancient valley and tumbles down two drops from an overall height of 105 feet (32 meters). During its heaviest flow in the summer, it pours an average of 4,944 cubic feet (140 cubic meters) of water every second. Gullfoss is not only known for its breathtaking power but also for the rainbows that appear above the falls like a multicolor crown on a sunny day."
+		})
+		@@include('sections/want-inner.html',{
+			"name":"golden",
+			"name1":"Iceland is a land",
+			"name2":"of fire and ice."
+		})
 		@@include('sections/footer.html')
 		<script src="./js/inner.bundle.js"></script>
 		<!-- preload -->
