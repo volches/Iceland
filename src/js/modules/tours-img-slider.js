@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-function swiperFunc () {
+function toursImgSlider () {
 	const swiper = new Swiper('.tours-slider', {
 		effect: "coverflow",
 		mousewheel: true,
@@ -38,4 +38,4 @@ function swiperFunc () {
 	});
 }
 
-export default swiperFunc;
+export default toursImgSlider;

@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-function swiperFunc () {
+function aboutInnerTextContainer () {
 	const swiper = new Swiper('.about-inner__text', {
 		direction: 'vertical',
   		slidesPerView: 'auto',
@@ -14,4 +14,4 @@ function swiperFunc () {
 	});
 }
 
-export default swiperFunc;
+export default aboutInnerTextContainer;
