@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-function swiperFunc () {
+function headerSlider () {
 	const swiper = new Swiper('.header-slider', {
 		slidesPerView: 4,
 		loop:true,
@@ -46,4 +46,4 @@ function swiperFunc () {
 	});
 }
 
-export default swiperFunc;
+export default headerSlider;

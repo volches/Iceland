@@ -80,9 +80,13 @@ const breakpointChecker = function (){
 	}
 };
 
-breakpoint.addListener(breakpointChecker);
-breakpointChecker();
+function toursCardSlider(){
+	breakpoint.addListener(breakpointChecker);
+	breakpointChecker();
+
+}
+
 
 // export default swiperFunc;
 
-export default breakpointChecker;
+export default toursCardSlider;

@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-function swiperFunc () {
+function feedbackSlider () {
 	const swiper = new Swiper('.feedback-slider', {
 		navigation: {
 			nextEl: '.feedback-slider__btn-next',
@@ -19,4 +19,4 @@ function swiperFunc () {
 	});
 }
 
-export default swiperFunc;
+export default feedbackSlider;
