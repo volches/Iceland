@@ -38,8 +38,8 @@ gulp.task('html:dev', function(){
     return gulp
         .src(['./src/html/**/*.html', '!./src/html/sections/**/*.html', '!./src/html/blocks/**/*.html'])
         .pipe(changed('./build/', {hasChanged: changed.compareContents}))
-        .pipe(plumber(plumberNotify('Html')))
         .pipe(fileInclude(fileIncludeSettings))
+        .pipe(plumber(plumberNotify('Html')))
         .pipe(gulp.dest('./build/'))
 });
 
