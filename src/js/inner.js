@@ -9,3 +9,6 @@ modal();
 
 import cardFunc from './modules/cardFunc.js';
 cardFunc();
+
+import aboutInnerSlider from './modules/about-inner-slider.js';
+aboutInnerSlider();

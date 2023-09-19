@@ -1,19 +1,24 @@
 <!-- ABOUT -->
-<section class="about-inner">
+<section class="about-inner @@name">
     <div class="container">
       <div class="about-inner__row">
         <div class="about-inner__title">
           <h3 class="h3 border">About</h3>
         </div>
         <div class="about-inner__column-left">
-          <div class="about-inner__img">
-            <img
-              src="./img/@@img1"
-              alt="img"
-              width="660px"
-              height="610px"
-            />
-          </div>
+          @@if (name === "waterfall") {
+            @@include('./../blocks/about-inner-slider.html')
+          }
+          @@if (!(name === "waterfall")){
+            <div class="about-inner__img">
+              <img
+                src="./img/@@img1"
+                alt="img"
+                width="660px"
+                height="610px"
+              />
+            </div>
+          }
         </div>
         <div class="about-inner__column-right">
           <!-- swiper text -->
