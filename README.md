@@ -9,6 +9,7 @@
 - [Golden Circle](https://volches.github.io/Iceland/golden.html)
 - [Blue Ice Cave](https://volches.github.io/Iceland/cave.html)
 - [The peak of Reynisfjall](https://volches.github.io/Iceland/reynisfjall.html)
+- [Icelandic Waterfalls](https://volches.github.io/Iceland/waterfalls.html)
 - [Glacier Lagoon](https://volches.github.io/Iceland/glacier.html)
 - [Wild Nature](https://volches.github.io/Iceland/wild.html)
 - [Hiking Iceland](https://volches.github.io/Iceland/scenic.html)

@@ -1,0 +1,18 @@
+<!-- CARDS -->
+<section class="cards-double @@page">
+    <div class="container">
+      <div class="cards-double__row-wrapper">
+        <div class="cards-double__row">
+            <!-- card -->
+            @@if (page === "waterfall") {
+                @@loop('./../blocks/elements/card-double.html', './data/card-double-waterfall.json')
+            }
+            @@if (page === "wild") {
+                @@loop('./../blocks/elements/card-double.html', './data/card-double-wild.json')
+            }
+          <span class="cards-double__border-right"></span>
+          <span class="cards-double__border-left"></span>
+        </div>
+      </div>
+    </div>
+  </section>
