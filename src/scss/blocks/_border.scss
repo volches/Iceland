@@ -46,4 +46,18 @@
     }
   }
 
+  .inner-text__header .border {
+
+    @media (max-width:340px){
+      &::before {
+        display: none;
+      }
+  
+      &::after {
+        display: none
+      }
+    };
+    
+  }
+
   

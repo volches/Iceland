@@ -1,0 +1,39 @@
+[
+    {
+        "number": "one",
+        "name": "Haifoss"
+    },
+    {
+        "number": "two",
+        "name": "Aldeyjarfoss"
+    },
+    {
+        "number": "three",
+        "name": "Dettifoss"
+    },
+    {
+        "number": "four",
+        "name": "Bruarfoss"
+    },
+    {
+        "number": "five",
+        "name": "Kvernufoss"
+    },
+    {
+        "number": "six",
+        "name": "Seljalandsfoss"
+    },
+    {
+        "number": "seven",
+        "name": "Godafoss"
+    },
+    {
+        "number": "eight",
+        "name": "Ofaerufoss"
+    },
+    {
+        "number": "nine",
+        "name": "Svartifoss"
+    }
+
+]
