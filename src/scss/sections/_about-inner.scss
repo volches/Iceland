@@ -194,6 +194,10 @@
     @media (max-width:499px) {
         width: 100%;
         max-height: 430px;
+
+        img{
+            object-fit: cover;
+        }
     }
 }
 
@@ -230,7 +234,11 @@
 
     @media (max-width:499px) {
         width: 100%;
-        max-height: 80%;
+        max-height: 430px;
+
+        img{
+            object-fit: cover;
+        }
     }
 }
 
